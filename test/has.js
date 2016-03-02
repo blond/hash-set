@@ -1,6 +1,7 @@
-import test from 'ava';
+'use strict';
 
-import hashSet from '../src/hash-set';
+const test = require('ava');
+const hashSet = require('../index');
 
 const MySet = hashSet(x => x);
 

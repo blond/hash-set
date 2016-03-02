@@ -1,10 +1,12 @@
+'use strict';
+
 /**
  * Returns Set class with custom equality comparisons and sameness.
  *
  * @param {function} hashFn — the function to determine the unique of value.
  * @returns {HashSet}
  */
-export default function hashSet(hashFn) {
+module.exports = function hashSet(hashFn) {
     if (!hashFn) {
         throw new Error('You should specify hash function to create HashSet.');
     }
