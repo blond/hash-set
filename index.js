@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Returns Set class with custom equality comparisons and sameness.
+ * Returns `Set` class with custom equality comparisons.
  *
  * @param {function} hashFn — the function to determine the unique of value.
  * @returns {HashSet}

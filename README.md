@@ -5,14 +5,14 @@ hash-set
 [![Travis Status][test-img]][travis]
 [![Coverage Status][coverage-img]][coveralls]
 
-[npm]:            https://www.npmjs.org/package/hash-set
-[npm-img]:        https://img.shields.io/npm/v/hash-set.svg
+[npm]:          https://www.npmjs.org/package/hash-set
+[npm-img]:      https://img.shields.io/npm/v/hash-set.svg
 
-[travis]:         https://travis-ci.org/blond/hash-set
-[test-img]:       https://img.shields.io/travis/blond/hash-set.svg
+[travis]:       https://travis-ci.org/blond/hash-set
+[test-img]:     https://img.shields.io/travis/blond/hash-set.svg
 
-[coveralls]:      https://coveralls.io/r/blond/hash-set
-[coverage-img]:   https://img.shields.io/coveralls/blond/hash-set.svg
+[coveralls]:    https://coveralls.io/r/blond/hash-set
+[coverage-img]: https://img.shields.io/coveralls/blond/hash-set.svg
 
 The original [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) uses [Same-value-zero](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness) equality.
 
@@ -56,7 +56,7 @@ API
 
 ### hashSet(hashFn)
 
-Returns `Set` class with custom equality comparisons and sameness.
+Returns `Set` class with custom equality comparisons.
 
 #### hashFn
 
