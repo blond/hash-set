@@ -26,8 +26,8 @@ module.exports = function hashSet(hashFn) {
         /**
          * Returns the function that created an instance's prototype.
          *
-         * @param iterable If an iterable object is passed, all of its elements will be added to the new Set.
-         *                 null is treated as undefined.
+         * @param {Iterable} iterable — if an iterable object is passed, then all of its elements
+         *                              will be added to the new Set. `null` is treated as undefined.
          * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of}
          */
         constructor(iterable) {
@@ -43,7 +43,7 @@ module.exports = function hashSet(hashFn) {
          * The value of size is an integer representing how many entries the Set object has.
          * A set accessor function for size is undefined; you can not change this property.
          *
-         * @returns the number of elements in a Set object.
+         * @returns {number} the number of elements in a Set object.
          */
         get size() {
             return this._map.size;
@@ -85,8 +85,8 @@ module.exports = function hashSet(hashFn) {
          * @returns {boolean} Returns true if an element in the Set object has been removed successfully;
          *                    otherwise false.
          */
-        delete(obj) {
-            const id = hashFn(obj);
+        delete(value) {
+            const id = hashFn(value);
 
             return this._map.delete(id);
         }
