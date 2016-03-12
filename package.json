@@ -25,6 +25,7 @@
     "ava": "0.13.0",
     "coveralls": "2.11.8",
     "eslint": "2.4.0",
+    "eslint-config-pedant": "0.1.0",
     "nyc": "6.0.0"
   },
   "scripts": {
