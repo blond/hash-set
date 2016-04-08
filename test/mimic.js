@@ -20,5 +20,5 @@ test('should return original Set with `valueOf()` method', t => {
     const originSet = (new Set([1, 2, 3]))._c; // AVA uses babel-runtime
     const mySet = new MySet([1, 2, 3]);
 
-    t.same(mySet.valueOf(), originSet);
+    t.deepEqual(mySet.valueOf(), originSet);
 });

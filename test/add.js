@@ -10,7 +10,7 @@ test('should add value', t => {
 
     set.add(1);
 
-    t.same(Array.from(set), [1]);
+    t.deepEqual(Array.from(set), [1]);
 });
 
 test('should not add existing value', t => {
@@ -19,7 +19,7 @@ test('should not add existing value', t => {
     set.add(1);
     set.add(1);
 
-    t.same(Array.from(set), [1]);
+    t.deepEqual(Array.from(set), [1]);
 });
 
 test('should support chains', t => {
@@ -29,5 +29,5 @@ test('should support chains', t => {
         .add(1)
         .add(2);
 
-    t.same(Array.from(set), [1, 2]);
+    t.deepEqual(Array.from(set), [1, 2]);
 });
