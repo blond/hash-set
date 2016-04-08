@@ -18,7 +18,7 @@ test('should add value but not hash', t => {
 
     set.add('kitty');
 
-    t.same(Array.from(set), ['kitty']);
+    t.deepEqual(Array.from(set), ['kitty']);
 });
 
 test('should add values with different hash', t => {
@@ -27,7 +27,7 @@ test('should add values with different hash', t => {
     set.add('kitty');
     set.add('puppy');
 
-    t.same(Array.from(set), ['kitty', 'puppy']);
+    t.deepEqual(Array.from(set), ['kitty', 'puppy']);
 });
 
 test('should not add value if other value with same hash', t => {
@@ -36,5 +36,5 @@ test('should not add value if other value with same hash', t => {
     set.add('cat');
     set.add('kitty');
 
-    t.same(Array.from(set), ['cat']);
+    t.deepEqual(Array.from(set), ['cat']);
 });

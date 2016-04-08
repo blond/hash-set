@@ -13,7 +13,7 @@ test('should delete existing value', t => {
 
     set.delete(1);
 
-    t.same(Array.from(set), [2]);
+    t.deepEqual(Array.from(set), [2]);
 });
 
 test('should not throw if deleted value is not exist', t => {
@@ -21,5 +21,5 @@ test('should not throw if deleted value is not exist', t => {
 
     set.delete(1);
 
-    t.same(Array.from(set), []);
+    t.deepEqual(Array.from(set), []);
 });
