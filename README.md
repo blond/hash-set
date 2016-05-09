@@ -9,7 +9,7 @@ hash-set
 [npm-img]:      https://img.shields.io/npm/v/hash-set.svg
 
 [travis]:       https://travis-ci.org/blond/hash-set
-[test-img]:     https://img.shields.io/travis/blond/hash-set.svg
+[test-img]:     https://img.shields.io/travis/blond/hash-set.svg?label=tests
 
 [coveralls]:    https://coveralls.io/r/blond/hash-set
 [coverage-img]: https://img.shields.io/coveralls/blond/hash-set.svg
