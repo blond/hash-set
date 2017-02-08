@@ -1,6 +1,6 @@
 {
   "name": "hash-set",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set with custom equality comparisons",
   "license": "MIT",
   "repository": "blond/hash-set",
