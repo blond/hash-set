@@ -10,14 +10,14 @@ test('should have `length` property', t => {
 });
 
 test('should mimic `toString()` method', t => {
-    const originSet = (new Set())._c; // AVA uses babel-runtime
+    const originSet = new Set();
     const mySet = new MySet();
 
     t.is(mySet.toString(), originSet.toString());
 });
 
 test('should return original Set with `valueOf()` method', t => {
-    const originSet = (new Set([1, 2, 3]))._c; // AVA uses babel-runtime
+    const originSet = new Set([1, 2, 3]);
     const mySet = new MySet([1, 2, 3]);
 
     t.deepEqual(mySet.valueOf(), originSet);
