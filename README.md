@@ -1,6 +1,8 @@
 hash-set
 ========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/blond/hash-set.svg)](https://greenkeeper.io/)
+
 [![NPM Status][npm-img]][npm]
 [![Travis Status][test-img]][travis]
 [![Coverage Status][coverage-img]][coveralls]
