@@ -169,6 +169,7 @@ module.exports = function hashSet(hashFn) {
          *
          * @returns {string}
          */
+        // eslint-disable-next-line class-methods-use-this
         toString() {
             return '[object Set]';
         }
